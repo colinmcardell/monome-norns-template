@@ -8,7 +8,7 @@ See [DEVELOPMENT.md](bin/dev/DEVELOPMENT.md) for detailed information on the tem
 
 - [x] Docs – README: Basic project information
 - [x] Docs – README: Repo README.md should function as generic monome norns script README template for new projects. Point to DEVELOPMENT.md for details.
-- [ ] Template – Add basic LICENSE file
+- [x] Template – Add basic LICENSE file
 - [ ] Docs – DEVELOPMENT: Add information on setting up and running unit tests for Lua scripts
 - [ ] Workflow – Add task for running unit tests
 - [ ] Workflow – Add task for creating release
