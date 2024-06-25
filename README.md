@@ -2,7 +2,31 @@
 
 An opinionated template and workflow for developing scripts for the [monome norns sound computer](https://monome.org/docs/norns).
 
+## What is this?
+
+A solid starting point, and a workflow for developing locally, then syncing to the norns. This template is opinionated in that it provides style, structure, tools, and executable workflow tasks to help along the way. It's designed to be used with Visual Studio Code, but can be used with any editor.
+
 See [DEVELOPMENT.md](bin/dev/DEVELOPMENT.md) for detailed information on the template and development workflow.
+
+## Quick start
+
+To get started with the template, you can clone/fork/download this repository and make sure you have the necessary tools installed on your local machine (see [DEVELOPMENT.md](bin/dev/DEVELOPMENT.md)).
+
+1. rename entry script – in the project root, rename the `template.lua` to the name of the script you are developing. For example, if you are developing a script called `drone monster`, rename the `main.lua` file to `drone_monster.lua`.
+1. update script name – in `.env.development`, update the `SCRIPT_NAME` variable to the name of your script. For example, if you are developing a script called `drone monster`, update the `SCRIPT_NAME` variable to `drone monster`.
+1. run sync task – Trigger a sync of your script to the norns device by running the provided Visual Studio Code task:
+
+   - Open the command palette (`Cmd + Shift + P`)
+   - Run the `Tasks: Run Task` command
+   - Select `⤴ norns: push script`
+
+   or running the following command from the project root:
+
+   ```sh
+   # run push to norns script
+   $ bin/dev/push_to_norns.sh
+   ```
+1. launch your script on the norns device – navigate to the `SELECT >` menu on the norns device and select your script to run it.
 
 ---
 
