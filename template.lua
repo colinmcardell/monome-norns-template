@@ -1,13 +1,17 @@
--- scriptname: short script description
+-- scriptname
+-- short script description
 -- v1.0.0 @author
 -- llllllll.co/t/12345
 --
--- E1 changes the value of something
--- E2 changes the value of something else
--- E3 changes the value of yet another thing
--- K1 does something
--- K2 does something else
--- K3 does yet another thing
+--
+--    ▼ instructions below ▼
+--
+-- E1 - something
+-- E2 - something else
+-- E3 - yet another thing
+-- K1 - does something
+-- K2 - does something else
+-- K3 - does yet another thing
 
 ---specify a minimum required version of norns for this script.
 norns.version.required = 240424 -- can be a number or string, formatted YYMMDD
