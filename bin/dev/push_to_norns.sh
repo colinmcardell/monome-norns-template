@@ -23,9 +23,9 @@ echo -e "${BLUE}${TASK_NAME} - syncing 💻 ${SCRIPT_NAME} project ⤴ 📡 ${NO
 if validate_env_sshpass_installed; then
   # Run rsync command with the loaded variables using sshpass for
   # non-interactive authentication
-  sshpass -p "${NORNS_PASSWORD}" rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" ${EXCLUDES[@]} ./ ${NORNS_USER}@${NORNS_HOST}:${DESTINATION_PATH}/code/${SCRIPT_NAME}
+  sshpass -p "${NORNS_PASSWORD}" rsync -avzm --delete -e "ssh -o StrictHostKeyChecking=no" ${EXCLUDES[@]} ./ ${NORNS_USER}@${NORNS_HOST}:${DESTINATION_PATH}/code/${SCRIPT_NAME}
 else
-  rsync -avz --delete ${EXCLUDES[@]} ./ ${NORNS_USER}@${NORNS_HOST}:${DESTINATION_PATH}/${SCRIPT_NAME}
+  rsync -avzm --delete ${EXCLUDES[@]} ./ ${NORNS_USER}@${NORNS_HOST}:${DESTINATION_PATH}/${SCRIPT_NAME}
 fi
 
 echo -e "\n${GREEN}${TASK_NAME} - task complete ⭐️${NC}"
