@@ -41,7 +41,7 @@ To get started with the template, you can clone/fork/download this repository an
 
 These are the recommended tools and [extensions](#installing-recommended-extensions) for developing scripts for norns:
 
-- [Visual Studio Code](https://code.visualstudio.com/) – Recommended editor for developing the lua based scripts for norns locally
+- [Visual Studio Code](https://code.visualstudio.com/) – Recommended editor for developing the Lua based scripts for norns locally
 - [Lua Language Server extension](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) – Lua language server for Visual Studio Code with support for LuaCATS annotations. see the [Documentation and Annotations](#documentation-and-annotations) section for more information.
 - [busted](https://github.com/lunarmodules/busted) – Lua unit testing framework and Visual Studio Code extension
 - [norns REPL](https://marketplace.visualstudio.com/items?itemName=midouest.norns-repl) – interact with norns in a Visual Studio Code terminal
@@ -149,7 +149,7 @@ This template includes a lot of documentation and annotations that you can emula
 
 ### Visual Studio Code – Configuration
 
-Included in this template is a `.vscode` folder that contains various file for vscode:
+Included in this template is a `.vscode` folder that contains various file for Visual Studio Code:
 
 - `extensions.json`: Recommended extensions for Visual Studio Code
 - `settings.json`: Recommended workspace settings
