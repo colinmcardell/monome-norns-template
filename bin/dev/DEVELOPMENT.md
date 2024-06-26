@@ -29,7 +29,7 @@ This template is intended to be an opinionated starting point for developing Lua
 
 ## Getting Started
 
-To get started with the template, you can clone/fork/download this repository and make sure you have the necessary tools installed on your local machine.
+To get started with the template, you can select ["Use this template"](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) for this repository and make sure you have the necessary tools installed on your local machine.
 
 ### Prerequisites
 
@@ -48,9 +48,9 @@ These are the recommended tools and [extensions](#installing-recommended-extensi
 
 ### Quick Start
 
-1. rename entry script – in the project root, rename the `template.lua` to the name of the script you are developing. For example, if you are developing a script called `drone monster`, rename the `main.lua` file to `drone_monster.lua`.
-1. update script name – in `.env.development`, update the `SCRIPT_NAME` variable to the name of your script. For example, if you are developing a script called `drone monster`, update the `SCRIPT_NAME` variable to `drone monster`.
-1. run sync task – Trigger a sync of your script to the norns device by running the provided Visual Studio Code task:
+1. Rename entry script – in the project root, rename the `template.lua` to the name of the script you are developing. For example, if you are developing a script called `drone monster`, rename the `main.lua` file to `drone_monster.lua`.
+1. Update script name – in `.env.development`, update the `SCRIPT_NAME` variable to the name of your script. For example, if you are developing a script called `drone monster`, update the `SCRIPT_NAME` variable to `drone monster`.
+1. Run push script task – Trigger a sync of your script to the norns device by running the provided Visual Studio Code task:
 
    - Open the command palette (`Cmd + Shift + P`)
    - Run the `Tasks: Run Task` command
@@ -62,7 +62,7 @@ These are the recommended tools and [extensions](#installing-recommended-extensi
    # run push to norns script
    $ bin/dev/push_to_norns.sh
    ```
-1. launch your script on the norns device – navigate to the `SELECT >` menu on the norns device and select your script to run it.
+1. Launch your script on the norns device – navigate to the `SELECT >` menu on the norns device and select your script to run it.
 
 ## Workflow
 
