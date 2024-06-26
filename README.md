@@ -95,7 +95,7 @@ https://github.com/…
 
 -- links to community, discussion, videos, etc.
 
-- [… on norns community](https://llllllll.co)
+- [… on norns community](https://norns.community/)
 - [llllllll.co/t/12345](https://llllllll.co/t/12345)
 - …
 
