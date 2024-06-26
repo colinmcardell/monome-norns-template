@@ -12,6 +12,8 @@ See [DEVELOPMENT.md](bin/dev/DEVELOPMENT.md) for detailed information on the tem
 
 To get started with the template, you can select ["Use this template"](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template) for this repository and make sure you have the necessary tools installed on your local machine (see [DEVELOPMENT.md](bin/dev/DEVELOPMENT.md)).
 
+Once you have a new project created from the template, follow these steps to get started:
+
 1. Rename entry script – in the project root, rename the `template.lua` to the name of the script you are developing. For example, if you are developing a script called `drone monster`, rename the `main.lua` file to `drone_monster.lua`.
 2. Update script name – in `.env.development`, update the `SCRIPT_NAME` variable to the name of your script. For example, if you are developing a script called `drone monster`, update the `SCRIPT_NAME` variable to `drone monster`.
 3. Run push script task – Trigger a sync of your script to the norns device by running the provided Visual Studio Code task:
