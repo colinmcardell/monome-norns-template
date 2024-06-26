@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This template is intended to be an opinionated starting point for developing Lua scripts for the monome norns. It includes a development workflow, recommended tools, and configurations to help with developing scripts. The template and workflow tasks is designed to be used with Visual Studio Code, but can be used with any editor.
+This template is intended to be an opinionated starting point for developing Lua scripts for the monome norns. It includes a development workflow, recommended tools, and configurations to help with developing scripts. The template and workflow tasks are designed to be used with Visual Studio Code, but can be used with any editor.
 
 ## Table of Contents
 
@@ -92,6 +92,8 @@ These tasks are used to quickly run common development tasks such as syncing you
 
 #### Task – Push script to norns
 
+Quickly syncing changes to the norns device during development. The script files and contents of `lib/` and `audio/` will be copied to the `DESTINATION_PATH`/`SCRIPT_NAME` folder on the norns device (see [Setting up `.env.development` file](#setting-up-envdevelopment-file) for more information on the environment variables used in workflow tasks).
+
 Using Visual Studio Code tasks:
 
 - Open the command palette (`Cmd + Shift + P`)
@@ -105,9 +107,9 @@ or running the following command from the project root:
 $ bin/dev/push_to_norns.sh
 ```
 
-Quickly syncing changes to the norns device during development. The script files and contents of `lib/` and `audio/` will be copied to the `DESTINATION_PATH`/`SCRIPT_NAME` folder on the norns device (see [Setting up `.env.development` file](#setting-up-envdevelopment-file) for more information on the environment variables used in workflow tasks).
-
 #### Task – Pull project data from norns
+
+Task to pull the contents of the `dust/data/${SCRIPT_NAME}` folder from the norns device to the local workspace. This is useful for pulling recorded audio files, data, or other project files from the norns device to the local machine.
 
 Using Visual Studio Code tasks:
 
@@ -121,8 +123,6 @@ or running the following command from the project root:
 # run pull project data from norns
 $ bin/dev/pull_project_data_from_norns.sh
 ```
-
-Task to pull the contents of the `dust/data/${SCRIPT_NAME}` folder from the norns device to the local workspace. This is useful for pulling recorded audio files, data, or other project files from the norns device to the local machine.
 
 ## Unit Testing
 
